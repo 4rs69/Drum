@@ -18,7 +18,7 @@ public class StartRotation : MonoBehaviour
         
       
             var hingeJointMotor = _hingeJoint.motor;
-            hingeJointMotor.targetVelocity = 100f;
+            hingeJointMotor.targetVelocity = 110;
             _hingeJoint.motor = hingeJointMotor;
        
         
