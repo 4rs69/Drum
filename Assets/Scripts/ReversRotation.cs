@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class ReversRotation : MonoBehaviour
 {
+    [SerializeField]
+    private float _targetVelocity = -100f;
+    
     private HingeJoint _hingeJoint;
-
-
 
     private void Awake()
     {
@@ -17,7 +18,7 @@ public class ReversRotation : MonoBehaviour
     {
         
         var hingeJointMotor = _hingeJoint.motor;
-        hingeJointMotor.targetVelocity = -100f;
+        hingeJointMotor.targetVelocity = _targetVelocity;
         _hingeJoint.motor = hingeJointMotor;
         
     }

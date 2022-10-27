@@ -6,8 +6,6 @@ public class StopRotation : MonoBehaviour
 {
     private HingeJoint _hingeJoint;
 
-
-
     private void Awake()
     {
         _hingeJoint = GetComponent<HingeJoint>();
